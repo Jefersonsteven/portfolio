@@ -77,6 +77,46 @@
 }
 
 @media (width >= 900px) {
+  .header {
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    height: 80vh;
+    & .logoContainer {
+      width: 116px;
+      height: 116px;
+    }
+    .menu {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      & > ul {
+        display: flex;
+        align-items: center;
+        gap: 40px;
+        flex-direction: column;
+        font-size: 2.4rem;
+        font-weight: 800;
+      }
+    }
+    & .sectionMenu {
+      display: flex;
+      flex-direction: column;
+      gap: 40px;
+      & .toggles {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        gap: 30px;
+        & div:nth-child(1) h4 {
+          font-size: 2.4rem;
+        }
+      }
+    }
+  }
+
+
   .socialMobile {
     display: none;
   }

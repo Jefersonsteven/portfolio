@@ -130,3 +130,12 @@ ul {
 a {
   text-decoration: none;
 }
+
+// * Media Queries
+@media(width >= 900px) {
+  body {
+    display: flex;
+    flex-direction:row-reverse;
+    align-items: center;
+  }
+}

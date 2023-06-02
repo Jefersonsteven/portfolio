@@ -9,3 +9,16 @@
     border-radius: 50%;
   }
 }
+
+@media(width >= 900px) {
+  .toggleTheme {
+    padding: 0px 8px;
+    width: 80%;
+    height: 30px;
+    cursor: pointer;
+    & div {
+      width: 20px;
+      height: 20px;
+    }
+  }
+}

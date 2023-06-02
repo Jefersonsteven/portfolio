@@ -11,7 +11,7 @@ function ToggleLanguage() {
   }
 
   return (
-    <div style={{ textTransform: "uppercase" }}>
+    <div style={{ textTransform: "uppercase", cursor: "pointer" }}>
       <h4 onClick={handleLenguage}>
         {language.language === "es" ? "en" : "es"}
       </h4>
