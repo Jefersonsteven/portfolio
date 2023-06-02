@@ -7,10 +7,12 @@ import ToggleTheme from "../ToggleTheme/ToggleTheme";
 import ToggleLanguage from "../ToggleLanguage/ToggleLanguage";
 import { useContext, useState } from "react";
 import { AppContext } from "@/context/AppContext";
+import { usePathname } from "next/navigation";
 
 function Header() {
   const { language } = useContext(AppContext);
   const [isOpen, SetIsOpen] = useState(false);
+  const pathname = usePathname();
 
   function handleMenu() {
     SetIsOpen((PrevIsOpen) => !PrevIsOpen);
@@ -35,13 +37,13 @@ function Header() {
           <CgMenuGridR />
         </div>
         <ul>
-          <li>
+          <li className={pathname === "/projects" && "optionMenu"}>
             <Link href="/projects">{language.header.projects}</Link>
           </li>
-          <li>
+          <li className={pathname === "/aboutme" && "optionMenu"}>
             <Link href="/aboutme">{language.header.aboutme}</Link>
           </li>
-          <li>
+          <li className={pathname === "/contact" && "optionMenu"}>
             <Link href="/contact">{language.header.contact}</Link>
           </li>
         </ul>
