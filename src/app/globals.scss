@@ -149,8 +149,10 @@ b {
   body {
     display: flex;
     flex-direction:row-reverse;
+    justify-content: space-between;
     align-items: center;
-    padding-right: 50px;
+    padding: 0 60px;
+    gap: 50px;
   }
 
   .theme--dark {
@@ -164,7 +166,9 @@ b {
       padding: 5px;
       border-radius: 5px;
       background-color: $color__primary;
-      color: $color__primary--dark;
+      & a {
+        color: $color__primary--dark;
+      }
     }
   }
 
@@ -179,7 +183,9 @@ b {
       padding: 5px;
       border-radius: 5px;
       background-color: $color__primary--dark;
-      color: $color__primary;
+      & a {
+        color: $color__primary;
+      }
     }
   }
 }

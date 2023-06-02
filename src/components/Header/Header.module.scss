@@ -76,13 +76,72 @@
   display: none;
 }
 
-@media (width >= 900px) {
+@media (width >= 900px) and (width <= 1000px) {
+    .header {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      width:200px;
+      height: 80vh;
+      padding: 0;
+      & .logoContainer {
+        width: 116px;
+        height: 116px;
+      }
+      .menu {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        & > ul {
+          display: flex;
+          align-items: center;
+          gap: 30px;
+          flex-direction: column;
+          font-size: 2.4rem;
+          font-weight: 800;
+        }
+      }
+      & .sectionMenu {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        & .toggles {
+          width: 100%;
+          min-width: 130px;
+          display: flex;
+          align-items: center;
+          flex-direction: column;
+          gap: 20px;
+          & div:nth-child(1) h4 {
+            font-size: 2.4rem;
+          }
+        }
+      }
+    }
+  
+  
+    .socialMobile {
+      display: none;
+    }
+    .socialDesktop {
+      display: inline;
+    }
+    .buttonMenuMobile {
+      display: none;
+    }
+    .menu {
+      display: flex;
+    }
+  }
+
+@media (width >= 1001px) {
   .header {
     display: flex;
     align-items: center;
     flex-direction: column;
-    width: 120px;
+    width:180px;
     height: 80vh;
+    padding: 0;
     & .logoContainer {
       width: 116px;
       height: 116px;
