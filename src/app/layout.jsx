@@ -1,5 +1,7 @@
+import { AppProvider } from "@/context/AppContext";
 import "./globals.scss";
 import { Montserrat } from "next/font/google";
+import Header from "@/components/Header/Header";
 
 const montserrat = Montserrat({ subsets: ["latin"] });
 
@@ -11,7 +13,12 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`${montserrat.className} theme--dark`}>{children}</body>
+      <body className={`${montserrat.className} theme--dark`}>
+        <AppProvider>
+          <Header />
+          {children}
+        </AppProvider>
+      </body>
     </html>
   );
 }

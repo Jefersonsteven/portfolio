@@ -1,28 +1,132 @@
 // Colores principales
-$color__primary: #F9E900;
-$color__secondary: #F98A4F;
-$color__text: #000;
+$color__primary: #EDEDED;
+$color__secondary: #DA0037;
+$color__text: #171717;
 // Colores oscuros
-$color__primary--dark: #000103;
-$color__secondary--dark: #515052;
-$color__text--dark: #FFFFFA;
+$color__primary--dark: #171717;
+$color__secondary--dark: #444444;
+$color__text--dark: #EDEDED;
 
-// Tema principal - Oscuro
+@mixin logoLight{
+  background: conic-gradient(from 180deg at 50% 50%, #DA0037 0deg, #444444 360deg);
+  border-radius: 114px;
+}
+
+@mixin logoDark{
+  background: conic-gradient(from 180deg at 50% 50%, #444444 0deg, rgba(68, 68, 68, 0) 360deg);
+  border-radius: 114px;
+}
+
+// * Theme principal - Dark
 .theme--dark {
   background-color: $color__primary--dark;
-  color: $color__secondary--dark;
+  color: $color__text--dark;
   & button {
-    color: $color__text--dark;
-    background: $color__secondary--dark;
+    color: $color__text;
+    background: $color__primary;
+  }
+  & .logo {
+    width: 100%;
+    height: 100%;
+    @include logoDark()
+  }
+  & a {
+    color: $color__primary;
+  }
+  & .toggleTheme {
+    display: flex;
+    align-items: center;
+    background-color: $color__secondary;
+    justify-content: flex-end;
+    & div {
+      background-color: $color__primary;
+    }
+  }
+  & .openMenu {
+    background-color: $color__primary--dark;
+    & ul li {
+      background-color: $color__secondary;
+    }
+  }
+  & .socialMedia {
+    & svg {
+      background-color: $color__primary;
+      & path {
+        fill: $color__primary--dark;
+      }
+    }
   }
 }
 
-// Tema Claro
+// * Theme Light
 .theme--light {
   background-color: $color__primary;
-  color: $color__secondary;
+  color: $color__text;
   & button {
-    color: $color__text;
-    background: $color__secondary;
+    color: $color__text--dark;
+    background: $color__primary--dark;
   }
+  & .logo {
+    width: 100%;
+    height: 100%;
+    @include logoLight()
+  }
+  & a {
+    color: $color__primary--dark;
+  }
+  & .toggleTheme {
+    display: flex;
+    align-items: center;
+    background-color: $color__primary--dark;
+    justify-content: flex-start;
+    & div {
+      background-color: $color__secondary;
+    }
+  }
+  & .openMenu {
+    background-color: $color__primary;
+    & ul li {
+      background-color: $color__primary--dark;
+      & a {
+        color: $color__primary;
+      }
+    }
+  }
+  & .socialMedia {
+    & svg {
+      background-color: $color__primary--dark;
+      & path {
+        fill: $color__primary;
+      }
+    }
+  }
+}
+
+// * More
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  width: 100vw;
+  height: 100%;
+  min-height: 100vh;
+}
+
+ul { 
+  & li {
+    list-style: none;
+    padding: 0;
+  }
+}
+
+a {
+  text-decoration: none;
 }

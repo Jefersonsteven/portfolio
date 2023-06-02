@@ -1,0 +1,35 @@
+{
+  "language": "en",
+  "header": {
+    "projects":"projects",
+    "aboutme":"about me",
+    "contact":"contact"
+  },
+  "home": {
+    "a1": "Hi, I'm Jeffer Steven, a",
+    "a2": "frontend",
+    "a3": "focused",
+    "a4": "web developer",
+    "a5": ". I'm passionate about creating interactive",
+    "a6": "websites",
+    "a7": "and",
+    "a8": "applications",
+    "a9": "that provide exceptional user experiences."
+  },
+  "projects": {
+    "title": "projects",
+    "projects": []
+  },
+  "aboutme": {
+    "image": "",
+    "content": "Hi, I'm Jeffer Steven, a frontend-focused web developer with expertise in design and software development. My tech stacks include ReactJs, NextJs, Redux, JavaScript, TypeScript, Html, Css, Sass, Tailwind, Postgresql, Sequelize, express, and nodejs. Additionally, I have proficiency in design tools such as Figma, Adobe Illustrator, and Adobe Photoshop. I have completed various projects in my spare time, some of which are available in my portfolio. I'm actively seeking exciting and challenging opportunities to continue growing as a web developer.",
+    "button": "more"
+  },
+  "contact": {
+    "name": "name",
+    "mail": "mail",
+    "subject": "subject",
+    "message": "message",
+    "button": "send"
+  }
+}

@@ -1,0 +1,11 @@
+.toggleTheme {
+  padding: 0px 5px;
+  width: 55px;
+  height: 21px;
+  border-radius: 15px;
+  & div {
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+  }
+}

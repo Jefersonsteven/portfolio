@@ -1,10 +1,10 @@
-"use client";
-import { useState } from "react";
+import { useContext } from "react";
 import "../../app/globals.scss";
+import { AppContext } from "@/context/AppContext";
+import styles from "./ToggleTheme.module.scss";
 
-export default function ToogleTheme() {
-  const [theme, setTheme] = useState("theme--dark");
-
+export default function ToggleTheme() {
+  const { theme, setTheme } = useContext(AppContext);
   function handleTheme() {
     setTheme((prevTheme) =>
       prevTheme === "theme--dark" ? "theme--light" : "theme--dark"
@@ -18,8 +18,8 @@ export default function ToogleTheme() {
     }
   }
   return (
-    <button onClick={handleTheme}>
-      {theme === "theme--dark" ? "Light" : "Dark"}
-    </button>
+    <div className={`toggleTheme ${styles.toggleTheme}`} onClick={handleTheme}>
+      <div></div>
+    </div>
   );
 }

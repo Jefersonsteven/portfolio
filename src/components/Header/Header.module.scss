@@ -1,0 +1,92 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 20px;
+  & .logoContainer {
+    width: 38px;
+    height: 38px;
+  }
+  .openMenu {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    padding: 23.5px 20px;
+    justify-content: space-between;
+    z-index: 1;
+    & .buttonMenuMobileOpen {
+      display: flex;
+      width: 100%;
+      height: 30px;
+      justify-content: flex-end;
+      & svg {
+        width: 30px;
+        height: 100%;
+      }
+    }
+    & > ul {
+      display: flex;
+      gap: 20px;
+      flex-direction: column;
+      height: 100%;
+      font-size: 3.6rem;
+      font-weight: 800;
+      & li {
+        display: grid;
+        place-items: center;
+        padding: 20px;
+        border-radius: 5px;
+      }
+    }
+  }
+  & .sectionMenu {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    & .buttonMenuMobile {
+      width: 30px;
+      height: 30px;
+      & svg {
+        width: 100%;
+        height: 100%;
+      }
+    }
+    & .toggles {
+      display: flex;
+      gap: 30px;
+    }
+  }
+}
+
+.menu {
+  display: none;
+  text-transform: capitalize;
+}
+
+
+.socialMobile {
+  display: inline;
+}
+.socialDesktop {
+  display: none;
+}
+
+@media (width >= 900px) {
+  .socialMobile {
+    display: none;
+  }
+  .socialDesktop {
+    display: inline;
+  }
+  .buttonMenuMobile {
+    display: none;
+  }
+  .menu {
+    display: flex;
+  }
+}

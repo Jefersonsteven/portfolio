@@ -1,0 +1,36 @@
+{
+  "language": "es",
+  "header": {
+    "projects": "proyectos",
+    "aboutme": "sobre mí",
+    "contact": "contacto"
+  },
+  "home": {
+    "a1": "Hola, soy Jeffer Steven, un",
+    "a2": "desarrollador web",
+    "a3": "centrado en el",
+    "a4": "frontend",
+    "a5": ". Me apasiona crear",
+    "a6": "sitios web",
+    "a7": "interactivos",
+    "a8": "y",
+    "a9": "aplicaciones",
+    "a10": "que brinden experiencias de usuario excepcionales."
+  },
+  "projects": {
+    "title": "proyectos",
+    "projects": []
+  },
+  "aboutme": {
+    "image": "",
+    "content": "Hola, soy Jeffer Steven, un desarrollador web centrado en el frontend, con experiencia en diseño y desarrollo de software. Mis herramientas tecnológicas incluyen ReactJs, NextJs, Redux, JavaScript, TypeScript, Html, Css, Sass, Tailwind, Postgresql, Sequelize, express y nodejs. Además, tengo habilidades en herramientas de diseño como Figma, Adobe Illustrator y Adobe Photoshop. He completado varios proyectos en mi tiempo libre, algunos de los cuales están disponibles en mi portafolio. Estoy buscando activamente oportunidades emocionantes y desafiantes para seguir creciendo como desarrollador web.",
+    "button": "más"
+  },
+  "contact": {
+    "name": "nombre",
+    "mail": "correo",
+    "subject": "asunto",
+    "message": "mensaje",
+    "button": "enviar"
+  }
+}
