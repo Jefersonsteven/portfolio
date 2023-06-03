@@ -16,7 +16,7 @@ function Header() {
   const router = useRouter();
 
   function handleMenu() {
-    SetIsOpen((PrevIsOpen) => !PrevIsOpen);
+    if (window.innerWidth < 900) SetIsOpen((PrevIsOpen) => !PrevIsOpen);
   }
 
   return (
@@ -37,7 +37,7 @@ function Header() {
         >
           <CgMenuGridR />
         </div>
-        <ul>
+        <ul onClick={handleMenu}>
           <li className={pathname === "/projects" ? "optionMenu" : ""}>
             <Link href="/projects">{language.header.projects}</Link>
           </li>
@@ -48,7 +48,7 @@ function Header() {
             <Link href="/contact">{language.header.contact}</Link>
           </li>
         </ul>
-        <div className={styles.socialMobile}>
+        <div onClick={handleMenu} className={styles.socialMobile}>
           <SocialMedia />
         </div>
       </div>

@@ -1,0 +1,21 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding: 20px;
+  & h1 {
+    text-transform: uppercase;
+  }
+  & .container {
+    & .sliderContainer{
+      & .slider {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+      }
+    }
+    & .navigation {
+      display: none;
+    }
+  }
+}

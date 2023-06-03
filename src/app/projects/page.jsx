@@ -11,9 +11,9 @@ import ProjectCard from "@/components/Project/ProjectCard";
 function Projects() {
   const { language } = useContext(AppContext);
   return (
-    <main>
+    <main className={styles.main}>
       <h1>{language.projects.title}</h1>
-      <section>
+      <section className={styles.container}>
         <section className={styles.sliderContainer}>
           <section className={styles.slider}>
             {language.projects.projects?.map((project) => {
@@ -21,6 +21,7 @@ function Projects() {
                 <ProjectCard
                   key={project.id}
                   title={project.title}
+                  image={project.image}
                   technologies={project.technologies}
                 />
               );
