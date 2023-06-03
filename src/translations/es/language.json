@@ -17,15 +17,43 @@
     "a9": "que brinden experiencias de usuario excepcionales."
   },
   "projects": {
-    "title": "proyectos",
-    "projects": []
+    "title": "Proyectos",
+    "projects": [
+      {
+        "id": 1,
+        "title": "tools match",
+        "image": "/images/tools-match-app.png",
+        "content": "ToolMatch es una aplicación web desarrollada como proyecto final grupal durante el bootcamp Full Stack Developer de Henry. La aplicación utiliza metodología Scrum y GitHub Flow. Está diseñada para facilitar la compra, venta y alquiler de herramientas usadas en comunidades de barrios latinoamericanos. ToolMatch utiliza tecnologías como Prisma, Next.js, Tailwind CSS y PostgreSQL. Además, cuenta con características adicionales como autenticación con Google, pasarelas de pagos con Mercado Pago y notificaciones con Nodemailer. Con todas estas funcionalidades, ToolMatch proporciona una plataforma segura, conveniente y completa para intercambiar herramientas entre vecinos de barrios latinoamericanos.",
+        "technologies": ["prisma", "nextjs", "tailwind", "postgresql", "css"],
+        "github": "https://github.com/Jefersonsteven/tools-match",
+        "web": "https://tools-match-eight.vercel.app"
+      },
+      {
+        "id": 2,
+        "title": "pokemon app",
+        "image": "/images/pokemon-app.png",
+        "content": "Este proyecto es una aplicación web basada en React que funciona como Pokédex. La aplicación permite a los usuarios buscar nombres exactos de Pokémon, filtrarlos por tipo y origen y ver detalles sobre cada uno. La aplicación utiliza la API de Pokémon para mostrar información sobre los Pokémon existentes y también permite a los usuarios crear nuevos Pokémon utilizando una base de datos PostgreSQL. Además de las funcionalidades de búsqueda y filtrado, la aplicación cuenta con una función de clasificación por orden alfabético, de ataque y de creación. Los usuarios pueden ordenar Pokémon en orden alfabético ascendente o descendente, por ataque más alto o más bajo, o por orden de creación (el orden en que fueron creados en la base de datos). La aplicación también tiene una función para ver detalles sobre cualquier Pokémon seleccionado. Esto incluye información como tipo, habilidades, estadísticas, movimientos y otros detalles relevantes. En resumen, esta aplicación ofrece una experiencia Pokédex completa para los fans de Pokémon.",
+        "technologies": [
+          "redux",
+          "react",
+          "sass",
+          "postgresql",
+          "express",
+          "sequelize"
+        ],
+        "github": "https://github.com/Jefersonsteven/pokemon-app",
+        "web": "https://pokemon-app-pokedex-jeffer.netlify.app"
+      }
+    ]
   },
   "aboutme": {
-    "image": "",
+    "title": "sobre mi",
+    "image": "/image/Me.png",
     "content": "Hola, soy Jeffer Steven, un desarrollador web centrado en el frontend, con experiencia en diseño y desarrollo de software. Mis herramientas tecnológicas incluyen ReactJs, NextJs, Redux, JavaScript, TypeScript, Html, Css, Sass, Tailwind, Postgresql, Sequelize, express y nodejs. Además, tengo habilidades en herramientas de diseño como Figma, Adobe Illustrator y Adobe Photoshop. He completado varios proyectos en mi tiempo libre, algunos de los cuales están disponibles en mi portafolio. Estoy buscando activamente oportunidades emocionantes y desafiantes para seguir creciendo como desarrollador web.",
-    "button": "más"
+    "button": "Más"
   },
   "contact": {
+    "title": "contactame",
     "name": "nombre",
     "mail": "correo",
     "subject": "asunto",

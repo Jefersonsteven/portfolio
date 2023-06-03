@@ -7,12 +7,13 @@ import ToggleTheme from "../ToggleTheme/ToggleTheme";
 import ToggleLanguage from "../ToggleLanguage/ToggleLanguage";
 import { useContext, useState } from "react";
 import { AppContext } from "@/context/AppContext";
-import { usePathname } from "next/navigation";
+import { usePathname, useRouter } from "next/navigation";
 
 function Header() {
   const { language } = useContext(AppContext);
   const [isOpen, SetIsOpen] = useState(false);
   const pathname = usePathname();
+  const router = useRouter();
 
   function handleMenu() {
     SetIsOpen((PrevIsOpen) => !PrevIsOpen);
@@ -20,30 +21,30 @@ function Header() {
 
   return (
     <header className={styles.header}>
-      <div className={styles.logoContainer}>
+      <div className={styles.logoContainer} onClick={() => router.push("/")}>
         <div className="logo"></div>
       </div>
       <div
-        className={`${isOpen && "openMenu"} ${isOpen ? styles.openMenu : ""}  ${
-          styles.menu
-        }`}
+        className={`${isOpen && "openMenu"} ${
+          isOpen ? styles.openMenu : " "
+        }  ${styles.menu}`}
       >
         <div
           onClick={handleMenu}
-          className={` ${isOpen ? styles.buttonMenuMobileOpen : ""} ${
+          className={` ${isOpen ? styles.buttonMenuMobileOpen : " "} ${
             styles.buttonMenuMobile
           }`}
         >
           <CgMenuGridR />
         </div>
         <ul>
-          <li className={pathname === "/projects" && "optionMenu"}>
+          <li className={pathname === "/projects" ? "optionMenu" : ""}>
             <Link href="/projects">{language.header.projects}</Link>
           </li>
-          <li className={pathname === "/aboutme" && "optionMenu"}>
+          <li className={pathname === "/aboutme" ? "optionMenu" : ""}>
             <Link href="/aboutme">{language.header.aboutme}</Link>
           </li>
-          <li className={pathname === "/contact" && "optionMenu"}>
+          <li className={pathname === "/contact" ? "optionMenu" : ""}>
             <Link href="/contact">{language.header.contact}</Link>
           </li>
         </ul>
