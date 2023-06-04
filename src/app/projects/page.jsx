@@ -41,6 +41,7 @@ function Projects() {
             {language.projects.projects?.map((project) => {
               return (
                 <ProjectCard
+                  id={project.id}
                   key={project.id}
                   title={project.title}
                   image={project.image}

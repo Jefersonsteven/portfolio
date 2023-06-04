@@ -1,10 +1,17 @@
 import iconDispenser from "@/assets/iconDispenser";
 import Image from "next/image";
 import styles from "./ProjectCard.module.scss";
+import { useRouter } from "next/navigation";
 
-function ProjectCard({ title, technologies, image }) {
+function ProjectCard({ title, technologies, image, id }) {
+  const router = useRouter();
+
+  function handleProject() {
+    router.push(`/projects/${id}`);
+  }
+
   return (
-    <article className={styles.card}>
+    <article className={styles.card} onClick={handleProject}>
       <figure className={styles.imageContainer}>
         <div></div>
         <Image src={image} width={455} height={218} alt={title} priority />
