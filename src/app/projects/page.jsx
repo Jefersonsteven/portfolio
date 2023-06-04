@@ -1,20 +1,42 @@
 "use client";
 import styles from "./projects.module.scss";
 import {
-  BsFillArrowRightSquareFill,
-  BsFillArrowLeftSquareFill,
+  BsFillArrowUpSquareFill,
+  BsFillArrowDownSquareFill,
 } from "react-icons/bs";
 import { AppContext } from "@/context/AppContext";
-import { useContext } from "react";
+import { useContext, useRef } from "react";
 import ProjectCard from "@/components/Project/ProjectCard";
 
 function Projects() {
   const { language } = useContext(AppContext);
+  const sliderContainerRef = useRef(null);
+
+  const handleScrollUp = () => {
+    sliderContainerRef.current.scrollTo({
+      top:
+        sliderContainerRef.current.scrollTop -
+        sliderContainerRef.current.clientHeight -
+        30,
+      behavior: "smooth",
+    });
+  };
+
+  const handleScrollDown = (e) => {
+    sliderContainerRef.current.scrollTo({
+      top:
+        sliderContainerRef.current.scrollTop +
+        sliderContainerRef.current.clientHeight +
+        30,
+      behavior: "smooth",
+    });
+  };
+
   return (
     <main className={styles.main}>
       <h1>{language.projects.title}</h1>
       <section className={styles.container}>
-        <section className={styles.sliderContainer}>
+        <section className={styles.sliderContainer} ref={sliderContainerRef}>
           <section className={styles.slider}>
             {language.projects.projects?.map((project) => {
               return (
@@ -29,8 +51,8 @@ function Projects() {
           </section>
         </section>
         <section className={styles.navigation}>
-          <BsFillArrowLeftSquareFill />
-          <BsFillArrowRightSquareFill />
+          <BsFillArrowUpSquareFill onClick={handleScrollUp} />
+          <BsFillArrowDownSquareFill onClick={handleScrollDown} />
         </section>
       </section>
     </main>

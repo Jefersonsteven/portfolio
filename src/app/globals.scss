@@ -152,15 +152,17 @@ b {
     justify-content: space-between;
     align-items: center;
     padding: 0 60px;
-    gap: 50px;
+    gap: 30px;
   }
 
   .theme--dark {
-    & header > div ul li a:hover{
+    & header > div ul li:hover{
       padding: 5px;
       border-radius: 5px;
       background-color: $color__primary;
-      color: $color__primary--dark;
+      & a {
+        color: $color__primary--dark;
+      }
     }
     & .optionMenu {
       padding: 5px;
@@ -173,11 +175,14 @@ b {
   }
 
   .theme--light {
-    & header > div ul li a:hover{
+    & header > div ul li:hover{
       padding: 5px;
       border-radius: 5px;
       background-color: $color__primary--dark;
       color: $color__primary;
+      & a {
+        color: $color__primary;
+      }
     }
     & .optionMenu {
       padding: 5px;

@@ -48,11 +48,74 @@
   }
 }
 
-@media (width > 490px) {
+@media (width >= 490px) {
   .card {
     & .imageContainer {
       & img {
         width: 100%;
+      }
+    }
+  }
+}
+
+@media (width >= 900px) {
+  .card {
+    height: 100%;
+    & .imageContainer {
+      height: 100%;
+      & img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+    & .content {
+      padding: 50px;
+      & .technologies {
+        display: flex;
+        justify-content: space-between;
+        & figure svg {
+          width: 40px;
+          height: 40px;
+        }
+      }
+      & h3 {
+        font-size: 3rem;
+      }
+    }
+  }
+}
+
+@media (width >= 1200px) {
+  .card {
+    & .content {
+      flex-direction: row-reverse;
+      padding: 50px;
+      & .technologies {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        gap: 30px;
+      }
+      & h3 {
+        display: flex;
+        align-items: flex-end;
+        font-size: 5rem;
+      }
+    }
+  }
+}
+
+@media (width >= 1900px) {
+  .card {
+    & .content {
+      & .technologies {
+        & figure svg {
+          width: 50px;
+          height: 50px;
+        }
+      }
+      & h3 {
+        font-size: 7rem;
       }
     }
   }

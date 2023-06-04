@@ -49,7 +49,7 @@
         "title": "entertainment web app",
         "image": "/images/entertainment-web-app.png",
         "content": "Este proyecto es un desafío de frontend llamado 'Aplicación web de entretenimiento' de Frontend Mentor. El objetivo es crear una aplicación web que se asemeje lo más posible al diseño proporcionado utilizando React y Sass. Los usuarios deberían poder navegar entre diferentes páginas, agregar/eliminar favoritos y buscar programas. La aplicación debe ser receptiva y mostrar estados de hover para los elementos interactivos. En este caso, la aplicación está diseñada para ver películas y series.",
-        "technologies": ["react", "sass"],
+        "technologies": ["react", "redux", "sass"],
         "github": "https://github.com/Jefersonsteven/entertainment-web-app",
         "web": "https://entertainment-web-app-jeffer-24c083.netlify.app/"
       }

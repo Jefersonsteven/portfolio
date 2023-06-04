@@ -99,6 +99,12 @@
           flex-direction: column;
           font-size: 2.4rem;
           font-weight: 800;
+          height: 200px;
+          & li {
+            display: flex;
+            align-items: center;
+            height: 60px;
+          }
         }
       }
       & .sectionMenu {
@@ -157,6 +163,9 @@
         flex-direction: column;
         font-size: 2.4rem;
         font-weight: 800;
+        & li {
+          height: 40px;
+        }
       }
     }
     & .sectionMenu {
