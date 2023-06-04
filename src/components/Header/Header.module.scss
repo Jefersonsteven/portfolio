@@ -145,7 +145,8 @@
     display: flex;
     align-items: center;
     flex-direction: column;
-    width:180px;
+    max-width: 150px;
+    min-width: 140px;
     height: 80vh;
     padding: 0;
     & .logoContainer {

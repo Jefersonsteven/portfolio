@@ -32,7 +32,7 @@
         "id": 2,
         "title": "pokemon app",
         "image": "/images/pokemon-app.png",
-        "content": "This project is a React-based web app that works like a Pokédex. The app allows users to search for exact Pokémon names, filter them by type and origin, and view details about each one. The app uses the Pokemon API to display information about existing Pokemon and also allows users to create new Pokemon using a PostgreSQL database. In addition to the search and filter functionalities, the application has an alphabetical sort, attack and creation function. Users can sort Pokémon in ascending or descending alphabetical order, by highest or lowest attack, or by creation order (the order they were created in the database). The app also has a feature to view details about any selected Pokemon. This includes information such as type, abilities, stats, moves, and other relevant details. In short, this app offers a complete Pokédex experience for Pokémon fans.",
+        "content": "The React-based web application functions as a Pokédex, allowing users to search, filter, and view details of Pokémon. It uses the Pokémon API to display existing information and allows the creation of new Pokémon in a PostgreSQL database. Additionally, it provides sorting functions by alphabetical order, attack, and creation, as well as the ability to view detailed information for each Pokémon, such as type, abilities, statistics, and moves. In summary, it provides a complete Pokédex experience for Pokémon fans.",
         "technologies": [
           "redux",
           "react",

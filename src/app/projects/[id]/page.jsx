@@ -6,6 +6,7 @@ import { BsFillArrowLeftSquareFill } from "react-icons/bs";
 import styles from "./project.module.scss";
 import Image from "next/image";
 import iconDispenser from "@/assets/iconDispenser";
+import Link from "next/link";
 
 export default function Project() {
   const router = useRouter();
@@ -14,13 +15,15 @@ export default function Project() {
   const p = language.projects.projects.filter((project) => project.id == id)[0];
 
   return (
-    <div>
+    <main className={styles.main}>
       <div className={styles.back}>
         <BsFillArrowLeftSquareFill onClick={() => router.back()} />
       </div>
       <article className={styles.project}>
         <section className={styles.firstSection}>
-          <h1>{p.title}</h1>
+          <h1>
+            <b>{p.title}</b>
+          </h1>
           <figure className={styles.imageContainer}>
             <Image
               src={p.image}
@@ -32,14 +35,22 @@ export default function Project() {
           </figure>
         </section>
         <section className={styles.secondSection}>
-          <div>
+          <div className={styles.technologies}>
             {p.technologies.map((technology, index) => {
               return <div key={index}>{iconDispenser(technology)}</div>;
             })}
-            <p>{p.content}</p>
+          </div>
+          <p className={styles.content}>{p.content}</p>
+          <div className={styles.buttons}>
+            <Link className="button" target="_blank" href={p.github}>
+              Github
+            </Link>
+            <Link className="button" target="_blank" href={p.web}>
+              Web
+            </Link>
           </div>
         </section>
       </article>
-    </div>
+    </main>
   );
 }

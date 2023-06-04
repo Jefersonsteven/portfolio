@@ -56,6 +56,16 @@ $color__text--dark: #EDEDED;
       }
     }
   }
+  & .button {
+    display: grid;
+    place-items: center;
+    border-radius: 25px;
+    font-weight: 800;
+    width: 120px;
+    height: 38px;
+    background-color: $color__primary;
+    color: $color__primary--dark;
+  }
 }
 
 // * Theme Light
@@ -100,6 +110,16 @@ $color__text--dark: #EDEDED;
       }
     }
   }
+  & .button {
+    display: grid;
+    place-items: center;
+    border-radius: 25px;
+    font-weight: 800;
+    width: 120px;
+    height: 38px;
+    background-color: $color__primary--dark;
+    color: $color__primary;
+  }
 }
 
 .socialMedia {
@@ -109,6 +129,11 @@ $color__text--dark: #EDEDED;
       fill: $color__primary;
     }
   }
+}
+
+.button:hover {
+  background-color: $color__secondary;
+  color: $color__primary;
 }
 
 // * More
@@ -152,7 +177,7 @@ b {
     justify-content: space-between;
     align-items: center;
     padding: 0 60px;
-    gap: 30px;
+    gap: 70px;
   }
 
   .theme--dark {
