@@ -31,7 +31,7 @@
   .main {
   padding: 20px 30px;
   & h1 {
-    font-size: 5.2rem;
+    font-size: 5rem;
     line-height: 6.5rem;
   }
 }
@@ -46,8 +46,8 @@
 @media (width >= 1900px) {
   .main {
   & h1 {
-    font-size: 8rem;
-    line-height: 10rem;
+    font-size: 6rem;
+    line-height: 8rem;
   }
 }
 }

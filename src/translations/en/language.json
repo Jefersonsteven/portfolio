@@ -56,11 +56,14 @@
     ]
   },
   "aboutme": {
-    "photo": "/image/Me.png",
+    "title": "about me",
+    "photo": "/images/Me.png",
     "content": "Hi, I'm Jeffer Steven, a frontend-focused web developer with expertise in design and software development. My tech stacks include ReactJs, NextJs, Redux, JavaScript, TypeScript, Html, Css, Sass, Tailwind, Postgresql, Sequelize, express, and nodejs. Additionally, I have proficiency in design tools such as Figma, Adobe Illustrator, and Adobe Photoshop. I have completed various projects in my spare time, some of which are available in my portfolio. I'm actively seeking exciting and challenging opportunities to continue growing as a web developer.",
-    "button": "More"
+    "button": "More",
+    "cv": ""
   },
   "contact": {
+    "title": "contact",
     "name": "name",
     "mail": "mail",
     "subject": "subject",

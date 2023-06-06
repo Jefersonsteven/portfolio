@@ -4,6 +4,7 @@
   gap: 20px;
   padding: 30px;
   & .back {
+    cursor: pointer;
     & svg {
       width: 30px;
       height: 30px;
@@ -128,7 +129,7 @@
           }
         }
         & .content {
-          font-size: 1.8rem;
+          font-size: 2.4rem;
           line-height: 3rem;
         }
       }

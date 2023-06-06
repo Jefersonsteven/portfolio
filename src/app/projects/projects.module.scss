@@ -24,9 +24,11 @@
 @media (width >= 900px) {
   .main {
     height: 80vh;
+    padding: 0;
     & .container {
       display: flex;
       gap: 30px;
+      max-height: 580px;
       height: 100%;
       & .sliderContainer {
         display: flex;
@@ -58,6 +60,9 @@
   .main {
     & h1 {
       font-size: 4rem;
+    }
+    & .container {
+      max-height: 670px;
     }
   }
 }

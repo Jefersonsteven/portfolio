@@ -27,14 +27,16 @@ function Projects() {
       top:
         sliderContainerRef.current.scrollTop +
         sliderContainerRef.current.clientHeight +
-        30,
+        20,
       behavior: "smooth",
     });
   };
 
   return (
     <main className={styles.main}>
-      <h1>{language.projects.title}</h1>
+      <h1>
+        <b>{language.projects.title}</b>
+      </h1>
       <section className={styles.container}>
         <section className={styles.sliderContainer} ref={sliderContainerRef}>
           <section className={styles.slider}>
