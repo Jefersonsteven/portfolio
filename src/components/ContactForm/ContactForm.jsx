@@ -2,14 +2,18 @@
 import React, { useContext } from "react";
 import { useForm, ValidationError } from "@formspree/react";
 import { AppContext } from "@/context/AppContext";
+import styles from "./ContactForm.module.scss";
+
 function ContactForm() {
   const { language } = useContext(AppContext);
   const [state, handleSubmit] = useForm("xbjevkkv");
+
   if (state.succeeded) {
     return <p>Thanks for joining!</p>;
   }
+
   return (
-    <form onSubmit={handleSubmit}>
+    <form className={`form ${styles.form}`} onSubmit={handleSubmit}>
       <label htmlFor="email">{language.contact.mail}</label>
       <input id="email" type="email" name="email" />
       <label htmlFor="name">{language.contact.name}</label>
@@ -20,12 +24,15 @@ function ContactForm() {
       <textarea
         id="message"
         name="message"
-        placeholder={language.contact.message}
+        rows={15}
+        placeholder={`${language.contact.message} ...`}
       />
       <ValidationError prefix="Message" field="message" errors={state.errors} />
-      <button type="submit" disabled={state.submitting}>
-        {language.contact.button}
-      </button>
+      <div>
+        <button className="button" type="submit" disabled={state.submitting}>
+          {language.contact.button}
+        </button>
+      </div>
     </form>
   );
 }

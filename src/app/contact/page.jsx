@@ -7,8 +7,10 @@ import { AppContext } from "@/context/AppContext";
 function Contact() {
   const { language } = useContext(AppContext);
   return (
-    <main>
-      <h1>{language.contact.title}</h1>
+    <main className={styles.main}>
+      <h1>
+        <b>{language.contact.title}</b>
+      </h1>
       <ContactForm />
     </main>
   );
