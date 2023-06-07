@@ -15,11 +15,13 @@ export default function Project() {
   const p = language.projects.projects.filter((project) => project.id == id)[0];
 
   return (
-    <main className={styles.main}>
+    <main className={`${styles.main}`}>
       <div className={styles.back}>
         <BsFillArrowLeftSquareFill onClick={() => router.back()} />
       </div>
-      <article className={styles.project}>
+      <article
+        className={`${styles.project} animate__animated animate__zoomInUp`}
+      >
         <section className={styles.firstSection}>
           <h1>
             <b>{p.title}</b>

@@ -33,7 +33,7 @@ function Projects() {
   };
 
   return (
-    <main className={styles.main}>
+    <main className={`${styles.main} animate__animated animate__backInLeft`}>
       <h1>
         <b>{language.projects.title}</b>
       </h1>

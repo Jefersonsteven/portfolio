@@ -8,7 +8,7 @@ import Link from "next/link";
 function Aboutme() {
   const { language } = useContext(AppContext);
   return (
-    <main className={styles.main}>
+    <main className={`${styles.main} animate__animated animate__backInLeft`}>
       <section className={styles.photoContainer}>
         <h1>
           <b>{language.aboutme.title}</b>
@@ -25,7 +25,7 @@ function Aboutme() {
       </section>
       <section className={styles.content}>
         <p>{language.aboutme.content}</p>
-        <Link className="button" href={language.aboutme.cv}>
+        <Link target="_blank" className="button" href={language.aboutme.cv}>
           {language.aboutme.button} ...
         </Link>
       </section>

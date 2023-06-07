@@ -7,7 +7,7 @@ export default function Home() {
   const { language } = useContext(AppContext);
   return (
     <main className={styles.main}>
-      <h1>
+      <h1 className="animate__animated animate__backInLeft">
         {language.home.a1}
         <b>{` ${language.home.a2}`}</b>
         {` ${language.home.a3}`}

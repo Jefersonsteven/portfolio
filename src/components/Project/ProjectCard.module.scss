@@ -6,6 +6,7 @@
   position: relative;
   border: 1px solid #000000;
   box-shadow: -1px 0px 0px rgba(255, 255, 255, 0.25);
+  max-width: 1200px;
   cursor: pointer;
   & .imageContainer {
     background-color: black;
@@ -64,6 +65,7 @@
   .card {
     height: 100%;
     & .imageContainer {
+      width: 100%;
       height: 100%;
       & img {
         width: 100%;
@@ -85,7 +87,12 @@
       }
     }
   }
+  .card:hover {
+    border: 2px double #DA0037;
+  }
 }
+
+
 
 @media (width >= 1200px) {
   .card {

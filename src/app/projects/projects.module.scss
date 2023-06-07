@@ -27,7 +27,7 @@
     padding: 0;
     & .container {
       display: flex;
-      gap: 30px;
+      gap: 60px;
       max-height: 580px;
       height: 100%;
       & .sliderContainer {
@@ -62,7 +62,8 @@
       font-size: 4rem;
     }
     & .container {
-      max-height: 670px;
+      max-height: 620px;
+      gap: 100px;
     }
   }
 }

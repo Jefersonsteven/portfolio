@@ -30,6 +30,9 @@ $color__text--dark: #EDEDED;
     height: 100%;
     @include logoDark()
   }
+  & .logo:hover {
+    @include logoLight()
+  }
   & a {
     color: $color__primary;
   }
@@ -81,6 +84,9 @@ $color__text--dark: #EDEDED;
     width: 100%;
     height: 100%;
     @include logoLight()
+  }
+  & .logo:hover {
+    @include logoDark()
   }
   & a {
     color: $color__primary--dark;
@@ -234,6 +240,6 @@ b {
 
 @media (width >= 1900px) {
   body {
-    padding-right: 80px;
+    padding: 0 80px;
   }
 }

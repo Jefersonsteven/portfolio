@@ -60,7 +60,7 @@
     "photo": "/images/Me.png",
     "content": "Hola, soy Jeffer Steven, un desarrollador web centrado en el frontend, con experiencia en diseño y desarrollo de software. Mis herramientas tecnológicas incluyen ReactJs, NextJs, Redux, JavaScript, TypeScript, Html, Css, Sass, Tailwind, Postgresql, Sequelize, express y nodejs. Además, tengo habilidades en herramientas de diseño como Figma, Adobe Illustrator y Adobe Photoshop. He completado varios proyectos en mi tiempo libre, algunos de los cuales están disponibles en mi portafolio. Estoy buscando activamente oportunidades emocionantes y desafiantes para seguir creciendo como desarrollador web.",
     "button": "Más",
-    "cv": ""
+    "cv": "/CV.pdf"
   },
   "contact": {
     "title": "contacto",

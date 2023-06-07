@@ -1,5 +1,6 @@
 import { AppProvider } from "@/context/AppContext";
 import "./globals.scss";
+import "animate.css";
 import { Montserrat } from "next/font/google";
 import Header from "@/components/Header/Header";
 
@@ -13,7 +14,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`${montserrat.className} theme--dark`}>
+      <body className={`${montserrat.className} theme--light`}>
         <AppProvider>
           <Header />
           {children}
