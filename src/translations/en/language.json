@@ -55,6 +55,19 @@
       }
     ]
   },
+  "challenges": {
+    "title": "More projects",
+    "challenges": [
+      {
+        "id": 1,
+        "title": "calculator app",
+        "image": "/images/calculator-app.png",
+        "technologies": ["html", "sass", "typescript"],
+        "github": "https://github.com/Jefersonsteven/calculator-typescript-app",
+        "web": "https://calculator-ts-jeffer.netlify.app/"
+      }
+    ]
+  },
   "aboutme": {
     "title": "about me",
     "photo": "/images/Me.png",

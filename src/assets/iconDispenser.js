@@ -9,6 +9,8 @@ import {
   SiSass,
   SiExpress,
   SiSequelize,
+  SiTypescript,
+  SiHtml5,
 } from "react-icons/si";
 
 export default function iconDispenser(technology) {
@@ -42,6 +44,12 @@ export default function iconDispenser(technology) {
 
     case "sequelize":
       return <SiSequelize />;
+
+    case "typescript":
+      return <SiTypescript />;
+
+    case "html":
+      return <SiHtml5 />;
 
     default:
       return;

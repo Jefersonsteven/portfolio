@@ -4,9 +4,11 @@ import {
   BsFillArrowUpSquareFill,
   BsFillArrowDownSquareFill,
 } from "react-icons/bs";
+import { TfiMoreAlt } from "react-icons/tfi";
 import { AppContext } from "@/context/AppContext";
 import { useContext, useRef } from "react";
 import ProjectCard from "@/components/Project/ProjectCard";
+import Link from "next/link";
 
 function Projects() {
   const { language } = useContext(AppContext);
@@ -36,6 +38,9 @@ function Projects() {
     <main className={`${styles.main} animate__animated animate__backInLeft`}>
       <h1>
         <b>{language.projects.title}</b>
+        <Link href="/projects/challenges">
+          <TfiMoreAlt />
+        </Link>
       </h1>
       <section className={styles.container}>
         <section className={styles.sliderContainer} ref={sliderContainerRef}>
