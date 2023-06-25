@@ -7,7 +7,7 @@ import CardChallenge from "@/components/CardChallenge/CardChallenge";
 function Challenges() {
   const { language } = useContext(AppContext);
   return (
-    <main className={styles.main}>
+    <main className={`${styles.main} animate__animated animate__backInLeft`}>
       <h1>
         <b>{language.challenges.title}</b>
       </h1>
