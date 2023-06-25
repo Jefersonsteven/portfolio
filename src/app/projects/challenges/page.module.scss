@@ -1,0 +1,27 @@
+.main {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  height: 100vh;
+  &__cardsContainer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    height: 100%;
+  }
+  & h1 {
+    text-transform: uppercase;
+  }
+}
+
+@media (min-width: 900px) {
+  .main {
+    height: 80vh;
+    gap: 30px;
+    & h1 {
+      font-size: 3.2rem;
+    }
+  }
+}

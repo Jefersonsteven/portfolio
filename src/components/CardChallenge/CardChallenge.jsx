@@ -12,17 +12,17 @@ function CardChallenge({ id, title, github, web, image, technologies }) {
             <div key={technology}>{iconDispenser(technology)}</div>
           ))}
         </div>
-        <div className={styles.title}>{title}</div>
+        <h3 className={styles.title}>{title}</h3>
       </div>
       <div className={styles.hoverCard}>
-        <Link target="_blank" href={github}>
+        <Link target="_blank" href={github} className="button">
           github
         </Link>
-        <Link target="_blank" href={web}>
+        <Link target="_blank" href={web} className="button">
           web
         </Link>
       </div>
-      <Image src={image} width={40} height={40} alt={title} />
+      <Image src={image} width={300} height={300} alt={title} />
     </div>
   );
 }

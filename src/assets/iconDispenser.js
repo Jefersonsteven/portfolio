@@ -12,6 +12,7 @@ import {
   SiTypescript,
   SiHtml5,
 } from "react-icons/si";
+import { TbApi } from "react-icons/tb";
 
 export default function iconDispenser(technology) {
   switch (technology) {
@@ -50,6 +51,9 @@ export default function iconDispenser(technology) {
 
     case "html":
       return <SiHtml5 />;
+
+    case "api":
+      return <TbApi />;
 
     default:
       return;

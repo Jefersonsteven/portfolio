@@ -39,7 +39,8 @@
           "sass",
           "postgresql",
           "express",
-          "sequelize"
+          "sequelize",
+          "api"
         ],
         "github": "https://github.com/Jefersonsteven/pokemon-app",
         "web": "https://pokemon-app-pokedex-jeffer.netlify.app"

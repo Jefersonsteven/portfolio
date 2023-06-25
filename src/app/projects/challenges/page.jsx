@@ -8,7 +8,9 @@ function Challenges() {
   const { language } = useContext(AppContext);
   return (
     <main className={styles.main}>
-      <h1>{language.challenges.title}</h1>
+      <h1>
+        <b>{language.challenges.title}</b>
+      </h1>
       <section className={styles.main__cardsContainer}>
         {language.challenges.challenges?.map(
           ({ id, title, github, web, image, technologies }) => {
