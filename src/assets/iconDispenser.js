@@ -11,6 +11,7 @@ import {
   SiSequelize,
   SiTypescript,
   SiHtml5,
+  SiJavascript,
 } from "react-icons/si";
 import { TbApi } from "react-icons/tb";
 
@@ -54,6 +55,9 @@ export default function iconDispenser(technology) {
 
     case "api":
       return <TbApi />;
+
+    case "javascript":
+      return <SiJavascript />;
 
     default:
       return;

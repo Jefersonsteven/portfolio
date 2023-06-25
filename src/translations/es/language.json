@@ -66,6 +66,14 @@
         "technologies": ["html", "sass", "typescript"],
         "github": "https://github.com/Jefersonsteven/calculator-typescript-app",
         "web": "https://calculator-ts-jeffer.netlify.app/"
+      },
+      {
+        "id": 2,
+        "title": "advice generator app",
+        "image": "/images/advice-generator-app.png",
+        "technologies": ["html", "css", "javascript", "api"],
+        "github": "https://github.com/Jefersonsteven/Advice-Generator-App",
+        "web": "https://advice-generator-app-jeffer.netlify.app/"
       }
     ]
   },
