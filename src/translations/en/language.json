@@ -74,6 +74,14 @@
         "technologies": ["html", "css", "javascript", "api"],
         "github": "https://github.com/Jefersonsteven/Advice-Generator-App",
         "web": "https://advice-generator-app-jeffer.netlify.app/"
+      },
+      {
+        "id": 3,
+        "title": "eco store landing",
+        "image": "/images/eco-store-landing.png",
+        "technologies": ["html", "sass"],
+        "github": "https://github.com/Jefersonsteven/eco-store-platzi",
+        "web": "https://eco-store-jeffer.netlify.app/"
       }
     ]
   },
