@@ -82,6 +82,14 @@
         "technologies": ["html", "sass"],
         "github": "https://github.com/Jefersonsteven/eco-store-platzi",
         "web": "https://eco-store-jeffer.netlify.app/"
+      },
+      {
+        "id": 4,
+        "title": "geometric figures",
+        "image": "/images/geometric-figures.png",
+        "technologies": ["html", "css", "javascript"],
+        "github": "https://github.com/Jefersonsteven/math-aplication-JS-FG",
+        "web": "http://jeffersondev.eso.soy.s3-website.us-east-2.amazonaws.com/"
       }
     ]
   },
