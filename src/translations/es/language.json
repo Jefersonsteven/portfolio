@@ -90,6 +90,14 @@
         "technologies": ["html", "css", "javascript"],
         "github": "https://github.com/Jefersonsteven/math-aplication-JS-FG",
         "web": "http://jeffersondev.eso.soy.s3-website.us-east-2.amazonaws.com/"
+      },
+      {
+        "id": 5,
+        "title": "clock app",
+        "image": "/images/clock-app.png",
+        "technologies": ["nextjs", "tailwind", "api"],
+        "github": "https://github.com/Jefersonsteven/clock-app",
+        "web": "https://clock-app-hazel.vercel.app/"
       }
     ]
   },
